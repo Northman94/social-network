@@ -1,4 +1,5 @@
 from . import bp
+from flask import render_template
 
 @bp.route("/")
 def index():
@@ -6,4 +7,4 @@ def index():
 
 @bp.route("/login")
 def login():
-    return "Hello from Login"
+    return render_template("auth/login.html", form)

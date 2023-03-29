@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 
-
 {% block title %}
-    Home Page
+        {% if title%}
+            {{title}}
+        {% endif %}
 {% endblock %}
 
 {% block content %}
-    Hello from index.html
+    {{ user.username }}
 {% endblock %}
 
