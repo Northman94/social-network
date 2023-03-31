@@ -1,6 +1,6 @@
 
 from app import app
-from flask import render_template, redirect, url_for
+from flask import render_template
 
 
 # Decorators:
@@ -17,13 +17,5 @@ def index():
 def about():
     return render_template("about.html")
 
-
-
-"""
-    context = {
-        "user": {"username": "Zh"},
-        "title": "Regestration"
-    }
-"""
 
 
