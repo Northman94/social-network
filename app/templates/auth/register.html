@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+
+{% block titile %} Registration {% endblock %}
+
+{% block content %}
+<div>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username.label }}  {{ form.username(size=32) }} <br>
+        {{ form.email.label }}  {{ form.email() }} <br>
+        {{ form.password.label }}  {{ form.password(size=32) }} <br>
+
+        {{ form.submit.label }}  {{ form.submit() }} <br>
+    </form>
+</div>
+{% endblock %}
